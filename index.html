@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crescendo Round 2</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">CodeXCompany</a>
+          </div><!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+			  <li><a href="#team">Team</a></li>
+			  <li><a href="#info">Info</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <!-- <p>We are a coding company from Mumbai, India</p> -->
+											<h3>We are a coding company from Mumbai, India</h3>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Prev Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Next Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/top2.jpg",
+                              title : "Build from Basics",
+                              author : "CodeX",
+                            },
+                            {
+                              bigImage :"images/top1.jpeg",
+                              title : "Work Hard and Persevere",
+                              author : "CodeX",
+                            },
+                            {
+                              bigImage :"images/top3.jpg",
+                              title : "Achieve Success",
+                              author : "CodeX",
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>About <span>Us</span></h2>
+        <p>We are a coding company that fulfills all your web development needs.<br> Be it Frontend or Backend; HTML, CSS, JavaScript or Django, Flask, Angular, We are just one call away.</p>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/about.png)"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-code"></i></div>
+                <div class="about-detail">
+                  <h4>Fully Functional Code</h4>
+                  <p>Our websites can be hosted using any available hising service. The code you receive will be completed to perfection so you can sit back, relax and watch your site gain views and engagements. </p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>Interactive and Responsive</h4>
+                  <p>We make sure that our sites are completely responsive so that your clients have an easy breezy time navigating through the site on any and every device. </p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h4>Product Integration</h4>
+                  <p>If it's a specific product that your company specializes in, then we can specially integrate your product and it's design on your website. You won't have to worry about creating apecial advertisements either, it will all be provided by us. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+
+
+	    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="dark">
+      <header class="title">
+        <h2 class="Port">Portfolio</h2>
+        <p>Here's a collage of a few sample websites that were an absolute hit!</p>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <ul id="filters" class="list-inline">
+            <li data-filter="all" class="filter">All</li>
+            <li data-filter=".business" class="filter">Business</li>
+            <li data-filter=".education" class="filter">Education</li>
+            <li data-filter=".fitness" class="filter">Fitness</li>
+            <li data-filter=".travel" class="filter">Travel</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <!-- PORTFOLIO OBJECT -->
+            <script type="text/javascript">
+            var portfolio = [
+                    {
+                      category : "business",
+                      image : "images/fame.jpg",
+                      title : "Business <span>Success</span>",
+                      link : "#none",
+                      text : "Successful and motivational business site"
+                    },
+                    {
+                      category : "business",
+                      image : "images/business.jpg",
+                      title : "Business <span>Planning</span>",
+                      link : "#none",
+                      text : "Planning and management business site"
+                    },
+                    {
+                      category : "business",
+                      image : "images/business2.jpg",
+                      title : "Business <span>Innovation</span>",
+                      link : "#none",
+                      text : "Innovative and skillfull business site"
+                    },
+                    {
+                      category : "education",
+                      image : "images/education.jpg",
+                      title : "Education <span>Platform</span>",
+                      link : "#none",
+                      text : "Educational purposes fulfilled"
+                    },
+                    {
+                      category : "fitness",
+                      image : "images/sportsfit.jpg",
+                      title : "Fitness/ <span>Sports</span>",
+                      link : "#none",
+                      text : "Stay fit, stay sporty, fitness site"
+                    },
+                    {
+                      category : "travel",
+                      image : "images/travel1.jpg",
+                      title : "Travel",
+                      link : "#none",
+                      text : "Travel to every corner of the world"
+                    },
+                    {
+                      category : "travel",
+                      image : "images/travel2.jpg",
+                      title : "Wanderlust",
+                      link : "#none",
+                      text : "Keep tripping and finding yourself, stay wanderlust"
+                    },
+                    {
+                      category : "travel",
+                      image : "images/travel3.jpg",
+                      title : "Explore",
+                      link : "#none",
+                      text : "Explore, travel, have fun"
+                    }
+                ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TEAM -->
+
+    <section id="team" class="light">
+      <header class="title">
+        <h2>Creative <span>Team</span></h2>
+        <p>Here is our team of dedicated and hardworking individuals without whom, CodeX wouldn't be where it currently is.</p>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/michael.jpg" alt="" class="img-circle">
+              </div>
+
+              <h3>Michael Scott</h3>
+              <h5>Creative Director</h5>
+
+              <p>The big man, the decision maker, the boss and the leader. None of the websites make it to our clients without his approval.</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/jackie.jpg" alt="" class="img-circle">
+              </div>
+
+              <h3>Jackie Burkhart</h3>
+              <h5>Designer</h5>
+
+              <p>A real eye for creativity this position demands, and it couldn't have been filled by anyone better</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/sheldon.jpg" alt="" class="img-circle">
+              </div>
+
+              <h3>Sheldon Cooper</h3>
+              <h5>Developer</h5>
+
+              <p>A nerd at heart and a complete braniac, meet the genius behind developing our wonderful websites. </p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/jesse.png" alt="" class="img-circle">
+              </div>
+
+              <h3>Jesse Pinkman</h3>
+              <h5>Commerce</h5>
+
+              <p>Our resident dealmaker, he knows his finance and always holds accountability wherever necessary. </p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+
+	    <!-- INFO -->
+
+    <section id="info" class="dark">
+      <header class="title">
+        <h2>The <span>Stats </span></h2>
+        <p>These are the stats that display the domains our company is in demand for the most:-</p>
+      </header>
+
+      <div class="container experties">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="70%"></span><em>Product Brand</em></li>
+                <li><span class="percentage" data-value="97%"></span><em>Web Development</em></li>
+                <li><span class="percentage" data-value="89%"></span><em>Social Media Advertisement Design</em></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="82%"></span><em>Imagery and Graphic Design</em></li>
+                <li><span class="percentage" data-value="58%"></span><em>Guidance and Consultation</em></li>
+                <li><span class="percentage" data-value="75%"></span><em>Hosting Services</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+
+
+    <section class="separator blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+              <div class="counter-icon">
+                <i class="fa fa-user"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="156"></span>
+                <small>Clients so far</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+              <div class="counter-icon">
+                <i class="fa fa-trophy"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="14"></span>
+                <small>Awards received</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+              <div class="counter-icon">
+                <i class="fa fa-tasks"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="178"></span>
+                <small>Projects taken up</small>
+              </div>
+            </div>
+          </div>
+<!--<div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-inbox"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="1298"></span>
+                <small>Mail</small>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER CONTACT -->
+
+     <section id="contact" class="dark">
+      <header class="title">
+        <h2>Contact <span>Us</span></h2>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 animated" data-animate="fadeInLeft">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="3" placeholder="Type Your Message"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-default submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 animated" data-animate="fadeInRight">
+            <address>
+                <span><i class="fa fa-map-marker fa-lg"></i> Bandra West, Mumbai 400050 </span>
+                <span><i class="fa fa-phone fa-lg"></i> (+91) 1111-9999-55</span>
+                <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:contact@example.com">contact&#64;example.com</a></span>
+                <span><i class="fa fa-globe fa-lg"></i> <a href="http://support.example.com">support.example.com</a></span>
+            </address>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Made BY <i class="fa fa-heart"></i> <a href="http://templatestock.co">Students' Council</a></p>
+            <p><small>Copyright 2021</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div><!-- /.container-fluid -->
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
